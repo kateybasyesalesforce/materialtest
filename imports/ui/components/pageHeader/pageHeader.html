@@ -1,0 +1,57 @@
+<template name="pageHeader">
+	<div class="slds-page-header">
+	  <div class="slds-grid">
+	    <div class="slds-col slds-has-flexi-truncate">
+	      <div class="slds-media slds-no-space slds-grow">
+	        <div class="slds-media__figure">
+	          <span class="slds-icon_container slds-icon-standard-opportunity" title="Description of icon when needed">
+	            <svg class="slds-icon" aria-hidden="true">
+	              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/symbolsStandard.svg#opportunity" />
+	            </svg>
+	          </span>
+	        </div>
+	        <div class="slds-media__body">
+	          <nav>
+	            <ol class="slds-breadcrumb slds-line-height_reset">
+	              <li class="slds-breadcrumb__item">
+	                <span>Opportunities</span>
+	              </li>
+	            </ol>
+	          </nav>
+	          <!-- <h1 class="slds-page-header__title slds-m-right_small slds-align-middle slds-truncate" title="{{opptyName}}">{{opptyName.content}}</h1> -->
+	        </div>
+	      </div>
+	    </div>
+	    <div class="slds-col slds-no-flex slds-grid slds-align-top">
+	      <button class="slds-button slds-button_stateful slds-button_neutral slds-not-selected" aria-live="assertive">
+	        <span class="slds-text-not-selected">
+	          <svg class="slds-button__icon_stateful slds-button__icon_left" aria-hidden="true">
+	            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/symbolsUtility.svg#add" />
+	          </svg>Follow</span>
+	        <span class="slds-text-selected">
+	          <svg class="slds-button__icon_stateful slds-button__icon_left" aria-hidden="true">
+	            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/symbolsUtility.svg#check" />
+	          </svg>Following</span>
+	        <span class="slds-text-selected-focus">
+	          <svg class="slds-button__icon_stateful slds-button__icon_left" aria-hidden="true">
+	            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/symbolsUtility.svg#close" />
+	          </svg>Unfollow</span>
+	      </button>
+	      <div class="slds-button-group" role="group">
+	        <button class="slds-button slds-button_neutral">Edit</button>
+	        <button class="slds-button slds-button_neutral">Delete</button>
+	        <button class="slds-button slds-button_neutral">Clone</button>
+	        <div class="slds-dropdown-trigger slds-dropdown-trigger_click slds-button_last">
+	          <button class="slds-button slds-button_icon slds-button_icon-border-filled" aria-haspopup="true" title="More Actions">
+	            <svg class="slds-button__icon" aria-hidden="true">
+	              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/symbolsUtility.svg#down" />
+	            </svg>
+	            <span class="slds-assistive-text">More Actions</span>
+	          </button>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+
+	</div>
+</template>

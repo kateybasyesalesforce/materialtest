@@ -1,3 +1,10 @@
 <template name="App_body">
-  {{> Template.dynamic template=main}}
+	<header class='slds-global-header_container oneHeader'>
+		{{> globalHeader }}
+	</header>
+	<div class='formsFuture-m-top-ninety slds-brand-band slds-brand-band_medium slds-template_default'>
+		<div class='slds-template__container'>
+		  {{> Template.dynamic template=main}}
+		</div>
+	</div>
 </template>

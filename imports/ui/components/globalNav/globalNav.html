@@ -1,0 +1,77 @@
+<template name="globalNav">
+	
+	<div class="slds-context-bar">
+	  <div class="slds-context-bar__primary">
+	    <div class="slds-context-bar__item slds-context-bar__dropdown-trigger slds-dropdown-trigger slds-dropdown-trigger_click slds-no-hover">
+	      <div class="slds-context-bar__icon-action">
+	        <button class="slds-button slds-icon-waffle_container slds-context-bar__button" title="Description of the icon when needed">
+	          <span class="slds-icon-waffle">
+	            <span class="slds-r1"></span>
+	            <span class="slds-r2"></span>
+	            <span class="slds-r3"></span>
+	            <span class="slds-r4"></span>
+	            <span class="slds-r5"></span>
+	            <span class="slds-r6"></span>
+	            <span class="slds-r7"></span>
+	            <span class="slds-r8"></span>
+	            <span class="slds-r9"></span>
+	          </span>
+	          <span class="slds-assistive-text">Open App Launcher</span>
+	        </button>
+	      </div>
+	      <span class="slds-context-bar__label-action slds-context-bar__app-name">
+	        <span class="slds-truncate" title="Sales">Sales</span>
+	      </span>
+	    </div>
+	  </div>
+	  <nav class="slds-context-bar__secondary" role="navigation">
+	    <ul class="slds-grid">
+	      <li class="slds-context-bar__item">
+	        <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Home">
+	          <span class="slds-truncate" title="Home">Home</span>
+	        </a>
+	      </li>
+	      <li class="slds-context-bar__item slds-is-active">
+	        <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Opportunities">
+	          <span class="slds-truncate" title="Opportunities">Opportunities</span>
+	        </a>
+	      </li>
+	    	{{#each object in menuObjects}}
+		      <li class="slds-context-bar__item">
+		        <a href="javascript:void(0);" class="slds-context-bar__label-action" title="{{object}}">
+		          <span class="slds-truncate" title="{{object}}">{{object}}</span>
+		        </a>
+		      </li>
+	    	{{/each}}
+	    </ul>
+	  </nav>
+	</div>
+
+</template>
+
+<!-- <template name="globalNav">
+
+	<div class="slds-context-bar slds-p-left_none">
+	  <nav class="slds-context-bar__secondary" role="navigation">
+	    <ul class="slds-grid">
+	      <li class="slds-context-bar__item {{isActiveRouteHome name='App.home'}}">
+	        <a href="/" class="slds-context-bar__label-action" title="Home">
+	          <span class="slds-truncate" title="Home">Components</span>
+	        </a>
+	      </li>
+	      <li class="slds-context-bar__item">
+	        <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Menu Item">
+	          <span class="slds-truncate" title="Menu Item">Interfaces</span>
+	        </a>
+	      </li>
+	      <li class="slds-context-bar__item">
+	        <a href="javascript:void(0);" class="slds-context-bar__label-action" title="Menu Item">
+	          <span class="slds-truncate" title="Menu Item">Events</span>
+	        </a>
+	      </li>
+	    </ul>
+	  </nav>
+	</div>
+
+</template>
+ -->

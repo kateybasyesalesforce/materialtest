@@ -1,4 +1,4 @@
 import './home.html';
 
-// import '../../components/hello/hello.js';
+import '../../components/pageHeader/pageHeader.js';
 // import '../../components/info/info.js';
